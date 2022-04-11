@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <select name="subjects" size="4" multiple="multiple">
+            <option value="1" selected="selected">HTML5</option>
+            <option value="2">CSS3</option>
+            <option value="3">Javascript</option>
+            <option value="4" selected="selected">Jquery</option>
+        </select>
+        <p></p>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+
+        <h3>그룹별 선택 항목을 제공합니다.</h3>
+        <form>
+            <label>전공 분야를 선택하세요.
+                <select name="major">
+                    <optgroup label="computer">
+                        <option>Software</option>
+                        <option>Robot</option>
+                        <option>cloud</option>
+                    </optgroup>
+                    <optgroup label="language">
+                        <option selected="selected">Korea</option>
+                        <option>English</option>
+                        <option>japan</option>
+                        <option>spainsh</option>
+                    </optgroup>
+                    <optgroup label="business">
+                        <option>Service</option>
+                        <option>Education</option>
+                        <option>Communication</option>
+                        <option>Marketing</option>
+                    </optgroup>
+                </select>
+                <p></p>
+                <input type="submit" value="선택">
+                <input type="reset" value="다시선택">
+            </label>
+
+            <label>전공 분야를 입력하세요.
+                <input type="text" list="majorlist" name="major">
+                <datalist id="majorlist">
+                <option value="Software">소프트웨어</option>
+                <option value="Robot">로봇</option>
+                <option value="System">시스템</option>
+                <option value="Service">서비스</option>
+                <option value="Education">교육</option>
+                </datalist>
+                <p></p>
+                <input type="submit" value="완료">
+                <input type="reset" value="다시작성">
+                </label>
+
+
+                <h3>이메일을 정확하게 입력하세요.</h3>
+이메일 : <input type="email" name="myemail">
+<p></p>
+<input type="submit" value="제출">
+<input type="reset" value="다시작성">
+
+                
+
+            <!-- 라디오 입력 양식 -->
+            <h3>현재 관심을 가지고 있는 학습 주제는 무엇입니까?</h3>
+            <input type="checkbox" name="subject" value="HTML5" checked="checked">HTML5
+            <br>
+            <input type="checkbox" name="subject" value="CSS3">CSS3
+            <br>
+            <input type="checkbox" name="subject" value="Javascript">Javascript
+            <br>
+            <input type="checkbox" name="subject" value="Jquery">Jquery
+            <p></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+            <!-- 버튼클릭 양싣 -->
+            <h3>Button 태그 사용</h3>
+            <button type="button" onclick="alert('클릭-1 사용')">클릭-1</button>
+            <h3>Input 태그 사용</h3>
+            <input type="button" onclick="alert('클릭-2 사용')" value="클릭-2">
+            <h3>Image 버튼 사용</h3>
+            <button type="button" onclick="alert('클릭-3 사용')"><img src="button.jpg"></button>
+        
+        
+            <h3>학습량 그래프</h3>
+            홍민성 : <meter min="0" max="100" optimum="50" value="30">60 out of 100</meter><br>
+            송지효 : <meter low="0.8" hign="0.9" value="0.22">22%</meter><br>
+            이민정 : <meter low="0.15" high="0.15" optimum="0.8" value="0.2">50%</meter>
+            <p></p>
+            <h3>작업 진행율</h3>
+            초기 작업 : <progress value="22" max="100" title="진행율">22%</progress><br>
+            중간 작업 : <progress value="0.77" max="1">77%</progress><br>
+            다음 작업 : <progress value="0.98" max="1">98%</progress><br>
+        
+        
+        
+        
+        </form>
+    </body>
+</html>
