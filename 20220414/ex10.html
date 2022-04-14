@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var coworkers2 = {
+        "programmer" : "egoing",
+       "designer" : "leezche"
+        }
+        coworkers2.bookkeeper = "duru";
+        coworkers2["data scientist"] = "taeho";
+       
+        coworkers2.showAll = function() {
+ for(var key in this) {
+	document.write(key + ' : ' + coworkers2[key] + '<br>');
+}
+}
+coworkers2.showAll();
+       
+       </script>
+</body>
+</html>
