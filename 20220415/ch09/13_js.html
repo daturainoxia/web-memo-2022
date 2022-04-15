@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var incData=1;
+        var decData=5;
+        var r1=r2=0;
+        r1=15%6; // 나머지 연산
+        document.write("15%3 = " + r1 +"<br>");
+        document.write("incData++ = "+ incData++ +"<br>"); // 후위 증가
+        document.write("후위 증가 출력 후 결과 = "+ incData +"<br>")
+        document.write("++incData = "+ ++incData +"<br>"); // 전위 증가
+        document.write("decData-- = "+ decData-- +"<br>"); // 후위 감소
+
+        document.write("--decData = "+ --decData +"<br>"); // 전위 감소
+        r2=incData*decData; // 곱셈 연산
+        document.write("incData*decData = "+ r2 +"<br>");
+        </script>
+
+
+<script>
+    var x=0;
+    var sum=0;
+    for(x=1; x<=100; x++) {
+    if(x%6 != 0)
+    continue;
+    sum+=x;
+    document.write(x + " ");
+    }
+    document.write("<p/>");
+    document.write("1~100까지 수 중 3의 배수 합 : <b>" + sum + "</b>");
+    </script>
+
+
+
+        </head>
+<body>
+    
+</body>
+</html>
